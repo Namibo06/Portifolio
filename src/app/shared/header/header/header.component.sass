@@ -1,0 +1,88 @@
+/*boots*/
+@keyframes initial
+  10%
+    left: -50%
+
+  70%
+    left: 50%
+    transform: translateX(-40%)
+
+  100%
+    left: 50%
+    transform: translateX(-50%)
+
+
+div.header-container
+  width: 950px
+  max-width: 95%
+  background-color: #020724
+  height: 100px
+  color: #fff
+  position: relative
+  top: 20px
+  left: 50%
+  transform: translateX(-50%)
+  border-radius: 20px
+  padding: 20px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  animation-name: initial
+  animation-duration: 2s
+
+
+  div.name
+    h2
+      letter-spacing: 0.8px
+      font-size: 27px
+      cursor: default
+
+      span
+        color: rgb(0,200,200)
+
+
+  nav.redirects
+    display: flex
+    flex-direction: row
+    align-items: center
+
+
+    div.link-single
+      display: flex
+      flex-direction: row
+      align-items: center
+      margin-right: 15px
+      cursor: pointer
+
+      &:last-child
+        margin-right: 0px
+
+      fa-icon
+        margin-right: 3px
+
+      a
+        color: #fff
+        letter-spacing: 0.5px
+        text-decoration: none
+
+
+    div.toogle-background
+      margin-left: 10px
+
+      button
+        border: 0
+        background-color: transparent
+
+        fa-icon
+          font-size: 17px
+          color: #fff
+          cursor: pointer
+
+          &:active
+          position: relative
+          top: 2px
+
+
+  menu
+    display: none

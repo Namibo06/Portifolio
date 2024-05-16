@@ -1,0 +1,165 @@
+/*key frames*/
+@keyframes initialOne
+  20%
+    left: -1200px
+
+  100%
+    left: 0%
+    transform: translateX(0%)
+
+@keyframes initialTwo
+  20%
+    left: -1300px
+
+  100%
+    left: 0%
+    transform: translateX(0%)
+
+/*boots*/
+.addBgSun
+  background-color: #f5f0f0 !important
+
+.addBgMoon
+  background-color: #171b1bef !important
+
+p.success,p.error
+  position: fixed
+  right: 10px
+  top: 100px
+  z-index: 999
+  padding: 15px
+  color: #fff
+  border-radius: 5px
+  display: flex
+  align-items: center
+
+  fa-icon
+    font-size: 24px
+    margin-right: 8px
+
+.success
+  background-color: rgba(0,200,0,0.65)
+
+.error
+  background: rgba(200,0,0,0.55)
+
+/*contact container*/
+.contact-container
+  background-color: #171b1bef
+  min-height: 100vh
+  overflow: hidden
+
+  /*main*/
+  main
+    position: relative
+    top: 60px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    width: 950px
+    max-width: 95%
+    position: relative
+    left: 50%
+    transform: translateX(-50%)
+
+    /*section about*/
+    section.about
+      position: relative
+      padding: 20px
+      background-color: #020724
+      color: #fff
+      border-radius: 10px
+      width: 500px
+      height: auto
+      animation-name: initialOne
+      animation-duration: 3s
+
+      h3
+        font-size: 21px
+        font-weight: 300
+        letter-spacing: 1px
+
+      div.content
+        padding-top: 20px
+
+        p
+          line-height: 23px
+          font-size: 16px
+          text-align: justify
+          padding: 0 10px 10px 10px
+          letter-spacing: 0.5px
+
+
+    section.contact
+      position: relative
+      background-color: #020724
+      color: #fff
+      padding: 20px
+      width: 400px
+      max-width: 95%
+      height: 450px
+      border-radius: 10px
+      animation-name: initialTwo
+      animation-duration: 2s
+
+      h3
+        font-size: 21px
+        font-weight: 300
+        letter-spacing: 1px
+
+      form
+        padding: 30px 15px 0 15px
+        width: 100%
+
+        div.camp
+          margin-bottom: 25px
+
+          input,select,textarea
+            width: 100%
+            padding: 10px 15px
+            border-radius: 5px
+            outline: 0
+            border: 0
+
+          textarea
+            resize: none
+            height: 90px
+            overflow-y: auto
+
+        div.row
+          display: flex
+          flex-direction: row
+
+          div.camp
+            width: 50%
+            margin-right: 4px
+
+            &:last-child
+              margin-right: 0px
+
+        button[type=submit]
+          width: 300px
+          padding: 10px
+          border: 0
+          border-radius: 20px
+          background-color: rgb(0, 200, 200)
+          position: relative
+          left: 50%
+          transform: translateX(-50%)
+          cursor: pointer
+          font-size: 16px
+          font-weight: bold
+          color: #fff
+          transition: 0.4s
+
+          &:hover
+            background-color: rgba(0, 200, 200,0.70)
+
+          &:active
+            position: relative
+            top: 2px
+
+
+
+

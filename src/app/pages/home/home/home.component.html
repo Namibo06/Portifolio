@@ -1,0 +1,148 @@
+<div class="home-container" id="home">
+  <header>
+    <app-header (toogleThemeReturn)="isSunOrMoon($event)" [receptBgInput]="updateIconBg"></app-header>
+  </header>
+
+  <main>
+    <section class="about">
+      <picture>
+        <img src="../../../../assets/113950682.jpg" alt="image">
+      </picture>
+
+      <div class="content">
+        <div class="name">
+          <h3>Joalisson P. Maia</h3>
+        </div><!--name-->
+
+        <div class="description">
+          <p>Sou Desenvolvedor Full Stack, atuando principalmente com PHP e JavaScript,com conhecimento em versionamento de código,e banco de dados. Adoraria aprender outras stacks se necessário,o que vale é a resolução de problemas.</p>
+        </div><!--description-->
+
+        <div class="buttons">
+          <button type="button">
+            <a href="https://wa.me/5575992889592">
+              <fa-icon [icon]="whatsapp"></fa-icon>
+              Whatsapp
+            </a>
+
+          </button>
+
+          <button type="button" (click)="copyEmail()">
+            <fa-icon [icon]="copy_temporary"></fa-icon>
+            Copiar Email
+          </button>
+        </div><!--buttons-->
+
+        <div class="socials">
+          <button type="button">
+            <fa-icon [icon]="github"></fa-icon>
+          </button>
+
+          <button type="button">
+            <fa-icon [icon]="linkedIn"></fa-icon>
+          </button>
+
+          <button type="button">
+            <fa-icon [icon]="instagram"></fa-icon>
+          </button>
+        </div><!--socials-->
+      </div><!--content-->
+    </section><!--about-->
+
+    <section class="experiences-and-stacks">
+      <div class="experiences">
+        <h3>Experiências:</h3>
+
+        <div class="experience-single">
+          <div class="year">
+            <p>06/2022 - 06/2023</p>
+          </div><!--year-->
+
+          <div class="job-title-name">
+            <p>Enova Tecnologia</p>
+
+            <p>Estagiário Suporte de Ti</p>
+          </div><!--job-title-name-->
+        </div><!--experience-single-->
+      </div><!--experiences-->
+
+      <div class="stacks">
+        <h3>Conhecimentos em:</h3>
+
+        <picture>
+          <div class="stack-single">
+            <img src="../../../../assets/icons8-html5.svg" alt="html" title="HTML">
+          </div><!--stack-single-->
+
+          <div class="stack-single">
+            <img src="../../../../assets/icons8-css.svg" alt="css" title="CSS">
+          </div><!--stack-single-->
+
+          <div class="stack-single">
+            <img src="../../../../assets/icons8-sass.svg" alt="sass" title="Sass">
+          </div><!--stack-single-->
+
+          <div class="stack-single">
+            <img src="../../../../assets/icons8-js.svg" alt="javascript" title="JavaScript">
+          </div><!--stack-single-->
+
+          <div class="stack-single">
+            <img src="../../../../assets/icons8-php.svg" alt="php" title="PHP">
+          </div><!--stack-single-->
+
+          <div class="stack-single">
+            <img src="../../../../assets/icons8-java.svg" alt="java" title="Java">
+          </div><!--stack-single-->
+
+          <div class="stack-single">
+            <img src="../../../../assets/icons8-angular.svg" alt="angular" title="Angular Framework">
+          </div><!--stack-single-->
+
+          <div class="stack-single">
+            <img src="../../../../assets/icons8-laravel-48.png" alt="laravel" title="Laravel">
+          </div><!--stack-single-->
+
+          <div class="stack-single">
+            <img src="../../../../assets/icons8-mysql.svg" alt="mysql" title="MySQL">
+          </div><!--stack-single-->
+
+          <div class="stack-single">
+            <img src="../../../../assets/icons8-postgresql.svg" alt="postgresql" title="PostgreSQL">
+          </div><!--stack-single-->
+        </picture>
+      </div><!--stacks-->
+    </section><!--experiences-and-stacks-->
+
+    <section class="projects">
+      <h3>Projetos Recentes:</h3>
+
+      <div class="project-single">
+        <img src="../../../../assets/projeto-hotel.png" alt="projeto hotel">
+
+        <h4>Sistema de Hotelaria</h4>
+
+        <picture>
+          <img src="../../../../assets/icons8-angular.svg" alt="angular" title="Angular Framework">
+
+          <img src="../../../../assets/icons8-laravel-48.png" alt="laravel" title="Laravel">
+
+          <img src="../../../../assets/icons8-postgresql.svg" alt="postgresql" title="PostgreSQL">
+        </picture>
+      </div><!--project-single-->
+
+      <div class="project-single">
+        <img src="../../../../assets/lava-rapido.png" alt="Lava Rápido Fast and Wish">
+
+        <h4>Lava Rápido</h4>
+
+        <picture>
+          <img src="../../../../assets/icons8-angular.svg" alt="angular" title="Angular Framework">
+
+          <img src="../../../../assets/icons8-laravel-48.png" alt="laravel" title="Laravel">
+
+          <img src="../../../../assets/icons8-postgresql.svg" alt="postgresql" title="PostgreSQL">
+        </picture>
+      </div><!--project-single-->
+    </section><!--projects-->
+  </main>
+</div>

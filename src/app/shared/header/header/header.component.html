@@ -1,0 +1,68 @@
+<div class="header-container">
+  <div class="name">
+    <h2>Jo<span>ca</span></h2>
+  </div><!--name-->
+
+  <nav class="redirects">
+    <div class="link-single">
+      <fa-icon [icon]="home"></fa-icon>
+      <a [routerLink]="['/']">Home</a>
+    </div><!--link-single-->
+
+    <div class="link-single">
+      <fa-icon [icon]="person_contact"></fa-icon>
+      <a [routerLink]="['/sobre']">Sobre</a>
+    </div><!--link-single-->
+
+    <div class="link-single">
+      <fa-icon [icon]="list_projects"></fa-icon>
+      <a [routerLink]="['/projetos']">Projetos</a>
+    </div><!--link-single-->
+
+    <div class="toogle-background">
+      <button type="button" (click)="toogleTheme()">
+        <fa-icon [icon]="background_color_theme"></fa-icon>
+      </button>
+    </div><!--toogle-background-->
+  </nav><!--redirects-->
+
+  <menu>
+    <div class="open-menu">
+      <button type="button">
+        <fa-icon [icon]="open_menu" (click)="open_menu_list()" *ngIf="open_active"></fa-icon>
+      </button>
+    </div><!--open-menu-->
+
+    <div class="menu-list" *ngIf="menu_list">
+      <div class="close-menu">
+        <button type="button">
+          <fa-icon [icon]="close_menu" (click)="close_menu_list()"></fa-icon>
+        </button>
+      </div><!--close-menu-->
+
+      <nav class="redirects-mobile">
+        <div class="link-single">
+          <fa-icon [icon]="home"></fa-icon>
+          <a [routerLink]="['/']">Home</a>
+        </div><!--link-single-->
+
+        <div class="link-single">
+          <fa-icon [icon]="person_contact"></fa-icon>
+          <a [routerLink]="['/sobre']">Sobre</a>
+        </div><!--link-single-->
+
+        <div class="link-single">
+          <fa-icon [icon]="list_projects"></fa-icon>
+          <a [routerLink]="['/projetos']">Projetos</a>
+        </div><!--link-single-->
+
+        <div class="toogle-background">
+          <button type="button" (click)="toogleTheme()">
+            <fa-icon [icon]="background_color_theme"></fa-icon>
+          </button>
+        </div><!--toogle-background-->
+      </nav><!--redirects-mobile-->
+    </div><!--menu-list-->
+
+  </menu>
+</div>

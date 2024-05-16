@@ -1,0 +1,61 @@
+<div class="contact-container" id="home">
+  <div class="callback-form">
+    <p class="error" *ngIf="callback_error">
+      <fa-icon [icon]="cancel"></fa-icon> Email não enviado
+    </p><!--error-->
+
+    <p class="success" *ngIf="callback_success">
+      <fa-icon [icon]="check"></fa-icon> Email enviado com sucesso
+    </p><!--success-->
+  </div><!--callback-form-->
+
+  <header>
+    <app-header [receptBgInput]="updateIconBg" (toogleThemeReturn)="isSunOrMoon($event)"></app-header>
+  </header>
+
+  <main>
+    <section class="about">
+      <h3>Sobre</h3>
+
+      <div class="content">
+        <p>Meu nome é Joalisson Pinto Maia,tenho 20 anos, costumam dizer que sou uma pessoa bastante paciente e simpático, sou emocionalmente equilibrado, adoro falar  sobre o mundo da T.I, nos tempos livres gosto de jogar, assistir, codar, ... , sou eclético a gosto musical, pretendo me tornar um grande empresário futuramente, esse é um breve resumo sobre mim.</p>
+
+        <p>Já ao ambiente de trabalho, valorizo o trabalho em equipe,mas também sei trabalhar muito bem sozinho, me adapto a qualquer ambiente, estou aberto a aprender e utilizar outras tecnologias se preciso for, ao depender da situação gosto muito de discutir sobre,por exemplo se pedirem opnião sobre o rumo da empresa ou do projeto, e essas são somente algumas das coisas mais relevantes que encontrei no momento.</p>
+      </div><!--content-->
+    </section><!--about-->
+
+    <section class="contact">
+      <h3>Entre em contato</h3>
+
+      <form action="" (submit)="sendEmail()">
+        <div class="row">
+          <div class="camp">
+            <input type="text" placeholder="Nome" name="first_name" required>
+          </div><!--camp-->
+
+          <div class="camp">
+            <input type="text" name="last_name" placeholder="Sobrenome">
+          </div><!--camp-->
+        </div><!--row-->
+
+        <div class="camp">
+          <input type="email" name="email" placeholder="Email" required>
+        </div>
+
+        <div class="camp">
+          <select name="assunt" id="assunt">
+            <option value="oferta-emprego">Oferta de Emprego</option>
+            <option value="feedback-portifolio">Feedback Portifólio</option>
+            <option value="fazer-conexao">Fazer Conexão</option>
+          </select>
+        </div><!--camp-->
+
+        <div class="camp">
+          <textarea name="description" id="description" placeholder="Descrição"></textarea>
+        </div><!--camp-->
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section><!--contact-->
+  </main>
+</div><!---contact-container-->

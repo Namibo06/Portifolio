@@ -1,0 +1,381 @@
+@media screen and (width < 950px)
+  main
+    position: relative
+    display: flex
+    flex-direction: column !important
+    height: 950px !important //só acrescentar aqui para aumentar tela
+
+    section.about
+      width: 100% !important
+      min-height: 250px !important
+      max-height: 250px !important
+      flex-direction: row !important
+      margin-right: 0px
+      margin-bottom: 20px
+
+      picture
+        position: relative !important
+        top: 20px !important
+        left: 20px !important
+        transform: translateX(-0%) !important
+
+      div.content
+        padding: 25px 10px 0 10px !important
+        display: flex !important
+        flex-direction: row !important
+
+        div.name
+          position: absolute
+          left: 20px
+          bottom: 35px
+
+        div.description
+          max-width: 480px
+          text-align: justify
+          line-height: 22px
+          padding-left: 40px
+
+        div.buttons
+          display: flex
+          flex-direction: row !important
+          position: absolute
+          bottom: 30px
+          left: 300px
+
+        div.socials
+          display: flex
+          flex-direction: column !important
+          position: absolute
+          right: 10px
+
+          button
+            margin-bottom: 15px
+
+            &:last-child
+              margin-bottom: 0
+
+    section.experiences-and-stacks
+      display: flex
+      flex-direction: row !important
+      justify-content: space-between
+      align-items: center
+      width: 100%
+      margin-bottom: 20px !important
+
+      div.stacks
+        width: 450px !important
+        height: auto !important
+        margin-left: 10px !important
+
+
+    section.projects
+      width: 100% !important
+
+      div.project-single
+        display: flex
+        align-items: center
+        flex-direction: row !important
+        padding: 20px 10px 20px 10px !important
+
+        img
+          position: relative !important
+          left: 10px !important
+          transform: translateX(-0%) !important
+          margin-right: 20px
+
+        picture
+          position: absolute
+          right:  20px
+
+          img
+            width: 40px !important
+            height: 40px !important
+
+
+@media screen and (width < 750px)
+  main
+    height: 920px !important //só acrescentar aqui para aumentar tela
+
+  section.about
+    div.content
+      div.description
+        padding-right: 40px
+
+  section.experiences-and-stacks
+    div.experiences
+      div.experience-single
+        padding: 5px 10px 0 10px !important
+        flex-direction: column !important
+
+        div.year
+          padding-bottom: 10px
+
+    div.stacks
+      position: relative
+      top: -5px
+
+      picture
+        grid-template-columns: repeat(auto-fill,minmax(50px,1fr)) !important
+
+        img
+          width: 30px !important
+          height: 30px !important
+
+  section.projects
+    div.project-single
+      img
+        width: 250px !important
+
+      picture
+          right: 10px !important
+
+          img
+            width: 30px !important
+            height: 30px !important
+            margin-bottom: 10px
+
+            &:last-child
+              margin-bottom: 0px
+
+@media screen and (width < 590px)
+  main
+    height: 1050px !important //só acrescentar aqui para aumentar tela
+
+    section.about
+      min-height: 300px !important
+      max-height: 300px !important
+
+      div.content
+        div.name
+          position: absolute
+          bottom: 80px
+
+        div.description
+          position: absolute !important
+          top: 20px !important
+          padding-left: 20px !important
+          padding-right: 20px !important
+
+        div.buttons
+          position: absolute !important
+          left: 20px !important
+          bottom: 15px !important
+
+        div.socials
+          position: absolute
+          bottom: 15px !important
+          display: flex !important
+          flex-direction: row !important
+          align-items: center !important
+
+          button
+            margin-right: 15px
+
+            &:nth-child(1),&:nth-child(2)
+              position: relative
+              top: 7px
+
+            &:last-child
+              margin-right: 0px
+
+    section.projects
+      div.project-single
+        img
+          width: 180px !important
+
+        h4
+          padding: 10px 5px !important
+          font-size: 14px !important
+          letter-spacing: 0px !important
+
+        picture
+          img
+            width: 25px !important
+            height: 25px !important
+            margin-bottom: 10px
+
+            &:last-child
+              margin-bottom: 0px
+
+@media screen and (width < 530px)
+  main
+    section.about
+      div.content
+        div.description
+          top: 5px !important
+
+@media screen and (width < 480px)
+  main
+    height: 1550px !important
+
+    section.about
+      display: flex
+      flex-direction: column !important
+      min-height: 440px !important
+
+      picture
+        position: absolute !important
+        top: 10px !important
+        left: 50% !important
+        transform: translateX(-50%) !important
+
+        img
+          width: 150px !important
+          height: 150px !important
+
+      div.content
+        padding: 175px 10px 0 10px !important
+
+        div.name
+          position: absolute
+          top: 170px
+          left: 50%
+          transform: translateX(-50%)
+
+          h3
+            font-size: 19px !important
+            letter-spacing: 0.9px !important
+
+        div.description
+          position: absolute !important
+          top: 200px !important
+          padding-left: 10px !important
+          padding-right: 20px !important
+
+          p
+            font-size: 14px
+
+        div.buttons
+          button
+            padding: 8px !important
+            margin-right: 10px !important
+
+    section.experiences-and-stacks
+      display: flex !important
+      flex-direction: column !important
+
+      div.experiences,div.stacks
+        width: 100% !important
+
+      div.stacks
+        margin-top: 15px
+        position: relative
+        left: -5px
+
+    section.projects
+      div.project-single
+        position: relative !important
+        left: 50% !important
+        transform: translateX(-43%) !important
+        width: 300px !important
+        flex-direction: column !important
+        padding: 20px !important
+
+        img
+          width: 280px !important
+          max-height: 120px !important
+          position: relative !important
+          left: 50% !important
+          transform: translateX(-50%) !important
+
+        h4
+          padding: 10px !important
+          text-align: center !important
+          font-size: 15px !important
+          letter-spacing: 1px !important
+          position: relative
+          left: -20px
+
+        picture
+          display: flex !important
+          flex-direction: row !important
+          position: relative !important
+          left: -100px !important
+
+          img
+            width: 25px !important
+            height: 25px !important
+            margin-right: 20px !important
+
+            &:last-child
+              margin-right: 0px !important
+
+@media screen and (width < 410px)
+  main
+    height: 1490px !important
+
+    section.about
+      min-height: 460px !important
+
+      div.content
+        div.name
+          h3
+            font-size: 18px !important
+
+        div.description
+          padding-right: 40px !important
+
+          p
+            font-size: 13px
+
+        div.buttons
+          position: absolute !important
+          left: 10px !important
+          bottom: 20px !important
+
+          button
+            padding: 6px !important
+
+        div.socials
+          flex-direction: column !important
+
+          button
+            &:nth-child(1)
+              top: 15px
+
+            &:nth-child(1),&:nth-child(2)
+              position: relative
+              left: 8px !important
+
+
+@media screen and (width < 315px)
+  main
+    section.about
+      picture
+        img
+          width: 130px !important
+          height: 130px !important
+
+      div.content
+        div.name
+          h3
+            font-size: 14px !important
+
+        div.description
+          padding-right: 25px !important
+
+          p
+            font-size: 12px !important
+
+        div.buttons
+          left: 10px !important
+
+          button
+            padding: 10px !important
+
+        div.socials
+          flex-direction: column !important
+          position: absolute !important
+          right: 1px !important
+          top: 30px !important
+          height: 150px
+
+    section.projects
+      div.project-single
+        img
+          width: 230px !important
+          left: 40% !important
+          transform: translateX(-50%)
+
+        picture
+          left: -85px  !important

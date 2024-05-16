@@ -1,0 +1,74 @@
+@media screen and (width < 480px)
+  div.header-container
+    div.name
+      position: relative
+      left: -10px
+
+    nav.redirects
+      display: none
+
+    menu
+      display: block
+
+      div.open-menu
+        button
+          border: 0
+          background-color: transparent
+
+          fa-icon
+            color: #fff
+            font-size: 24px
+            cursor: pointer
+
+            &:active
+              position: relative
+              top: 2px
+
+      div.menu-list
+        position: relative
+        top: -15px
+        left: 30px
+
+        div.close-menu
+          position: relative
+          right: 30px
+          top: 40px
+
+          button
+            border: 0
+            background-color: transparent
+
+            fa-icon
+            color: #fff
+            font-size: 24px
+            cursor: pointer
+
+        nav.redirects-mobile
+          display: grid
+          grid-template-columns: repeat(2,1fr)
+
+          div.link-single
+            margin-bottom: 15px
+            margin-right: 5px
+
+            fa-icon
+              position: relative
+              right: 4px
+              font-size: 16px
+
+            a
+              color: #fff
+              text-decoration: none
+              font-size: 14px
+
+          div.toogle-background
+            button
+              position: relative
+              left: 20px
+              background-color: transparent
+              border: 0
+
+              fa-icon
+                font-size: 19px
+                color: #fff
+                cursor: pointer
