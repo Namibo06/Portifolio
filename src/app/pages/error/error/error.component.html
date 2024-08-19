@@ -1,1 +1,18 @@
-<p>error works!</p>
+<div class="error-container" id="error-container">
+  <header>
+    <app-header (toogleThemeReturn)="isSunOrMoon($event)" [receptBgInput]="updateIconBg"></app-header>
+  </header>
+
+  <main>
+    <div class="title">
+      <h1 id="title">Página não encontrada</h1>
+    </div><!--title-->
+
+    <nav class="navigation">
+      <p id="content">
+        Você está fora do portifólio,volte clicando
+        <a href="" id="link"> aqui </a>
+      </p>
+    </nav><!--navigation-->
+  </main>
+</div><!--error-container-->
