@@ -20,6 +20,11 @@ export class ContactComponent implements OnInit{
   callback_error:boolean=false;
   callback_success:boolean=false;
 
+  firstName: string = "";
+  lastName: string = "";
+  assunt: string = "";
+  message: string = "";
+
 
   constructor(
     private renderer:Renderer2
@@ -29,12 +34,14 @@ export class ContactComponent implements OnInit{
     this.verifyBg();
   }
 
-  sendEmail(){
-    this.callback_success=true;
+  sendMessageForWhatsapp(firstName: string, lastName: string, assunt: string, message: string){
+    const phone: string = "75992889592";
+    const encodedMessage = encodeURIComponent(`Meu nome é ${firstName} ${lastName}, o assunto tratado a ser tratado é ${assunt}, e a mensagem é: ${message}`); // Codificar a mensagem
 
-    setTimeout(() => {
-      this.callback_success=false;
-    }, 5000);
+    const whatsappUrl = `https://wa.me/${phone}?text=${encodedMessage}`;
+
+    window.open(whatsappUrl, '_blank');
+
   }
 
   verifyBg(){
