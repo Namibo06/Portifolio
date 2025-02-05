@@ -3,7 +3,7 @@
     position: relative
     display: flex
     flex-direction: column !important
-    height: 950px !important //só acrescentar aqui para aumentar tela
+    height: 900px !important //só acrescentar aqui para aumentar tela
 
     section.about
       width: 100% !important
@@ -62,6 +62,12 @@
       width: 100%
       margin-bottom: 20px !important
 
+      .experiences
+        height: 150px !important
+
+        div.experience-single
+          padding: 10px 10px 0 10px !important
+
       div.stacks
         width: 450px !important
         height: auto !important
@@ -71,76 +77,101 @@
     section.projects
       width: 100% !important
 
-      div.project-single
-        display: flex
-        align-items: center
-        flex-direction: row !important
-        padding: 20px 10px 20px 10px !important
+      h3
+        padding: 20px 10px 0 25px !important
 
-        img
-          position: relative !important
-          left: 10px !important
-          transform: translateX(-0%) !important
-          margin-right: 20px
+      div.project-wrapper
+        display: grid
+        grid-template-columns: repeat(auto-fill,minmax(400px,1fr))
+        gap: 10px
+        position: relative
+        left: 50%
+        transform: translateX(-44%)
 
-        picture
-          position: absolute
-          right:  20px
+
+        div.project-single
+          display: flex
+          align-items: center
+          flex-direction: row !important
+          padding: 20px 10px 20px 10px !important
 
           img
-            width: 40px !important
-            height: 40px !important
+            position: relative !important
+            left: 10px !important
+            transform: translateX(-0%) !important
+            margin-right: 20px
 
+          picture
+            img
+              width: 40px !important
+              height: 40px !important
+
+@media screen and (width < 870px)
+  main
+    height: 1200px !important
+
+    div.project-wrapper
+      display: flex !important
+      flex-direction: column !important
+      align-items: center !important
+      justify-content: center !important
+      margin: 20px auto !important
+      gap: 0px !important
+      transform: translateX(-50%) !important
+
+@media screen and (width < 785px)
+  main
+    height: 1230px !important
 
 @media screen and (width < 750px)
   main
-    height: 920px !important //só acrescentar aqui para aumentar tela
+    height: 1190px !important
 
-  section.about
-    div.content
-      div.description
-        padding-right: 40px
+    section.about
+      div.content
+        div.description
+          padding-right: 40px
 
-  section.experiences-and-stacks
-    div.experiences
-      div.experience-single
-        padding: 5px 10px 0 10px !important
-        flex-direction: column !important
+    section.experiences-and-stacks
+      .experiences
+        height: 180px !important
 
-        div.year
-          padding-bottom: 10px
+        div.experience-single
+          padding: 5px 10px 0 10px !important
+          flex-direction: column !important
 
-    div.stacks
-      position: relative
-      top: -5px
+          div.year
+            padding-bottom: 10px
 
-      picture
-        grid-template-columns: repeat(auto-fill,minmax(50px,1fr)) !important
+      div.stacks
+        position: relative
+        top: -5px
 
-        img
-          width: 30px !important
-          height: 30px !important
-
-  section.projects
-    div.project-single
-      img
-        width: 250px !important
-
-      picture
-          right: 10px !important
+        picture
+          grid-template-columns: repeat(auto-fill,minmax(50px,1fr)) !important
 
           img
             width: 30px !important
             height: 30px !important
-            margin-bottom: 10px
 
-            &:last-child
-              margin-bottom: 0px
+    section.projects
+      div.project-single
+        img
+          width: 250px !important
+
+        picture
+            right: 10px !important
+
+            img
+              width: 30px !important
+              height: 30px !important
+              margin-bottom: 10px
+
+              &:last-child
+                margin-bottom: 0px
 
 @media screen and (width < 590px)
   main
-    height: 910px !important //só acrescentar aqui para aumentar tela
-
     section.about
       min-height: 300px !important
       max-height: 300px !important
@@ -181,7 +212,7 @@
     section.projects
       div.project-single
         img
-          width: 180px !important
+          width: 220px !important
 
         h4
           padding: 10px 5px !important
@@ -189,6 +220,8 @@
           letter-spacing: 0px !important
 
         picture
+          padding-left: 40px !important
+
           img
             width: 25px !important
             height: 25px !important
@@ -196,6 +229,10 @@
 
             &:last-child
               margin-bottom: 0px
+
+@media screen and (width < 568px)
+  main
+    height: 1250px !important
 
 @media screen and (width < 530px)
   main
@@ -264,19 +301,8 @@
 
     section.projects
       div.project-single
-        position: relative !important
-        left: 50% !important
-        transform: translateX(-43%) !important
-        width: 300px !important
-        flex-direction: column !important
-        padding: 20px !important
-
         img
-          width: 280px !important
-          max-height: 120px !important
-          position: relative !important
-          left: 50% !important
-          transform: translateX(-50%) !important
+          width: 180px !important
 
         h4
           padding: 10px !important
@@ -284,13 +310,13 @@
           font-size: 15px !important
           letter-spacing: 1px !important
           position: relative
-          left: -20px
+          left: -0px
 
         picture
           display: flex !important
           flex-direction: row !important
           position: relative !important
-          left: -100px !important
+          left: -29px !important
 
           img
             width: 25px !important
@@ -300,8 +326,14 @@
             &:last-child
               margin-right: 0px !important
 
+@media screen and (width < 439px)
+  main
+    height: 1520px !important
+
 @media screen and (width < 410px)
   main
+    height: 1540px !important
+
     section.about
       min-height: 460px !important
 
@@ -335,9 +367,14 @@
               position: relative
               left: 8px !important
 
+@media screen and (width < 333px)
+  main
+    height: 1600px !important
 
 @media screen and (width < 315px)
   main
+    height: 1600px !important
+
     section.about
       picture
         img
@@ -369,11 +406,11 @@
           height: 150px
 
     section.projects
-      div.project-single
-        img
-          width: 230px !important
-          left: 40% !important
-          transform: translateX(-50%)
+        div.project-single
+          img
+            width: 180px !important
+            left: 40% !important
+            transform: translateX(-50%)
 
-        picture
-          left: -85px  !important
+          picture
+            left: -30px  !important
